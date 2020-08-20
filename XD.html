@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+</head>
+<body>
+
+    
+    <script>
+
+
+       
+       /* function Animal (nombre, genero){
+            this.nombre = nombre;
+            this.genero = genero;
+
+            //methods
+
+            Animal.prototype.sonar = function (){
+                console.log('*ruido*');
+
+
+            }
+
+             Perro.prototype.ladrido = function(){
+                console.log('hola');
+            }
+
+        }
+
+        
+        function Perro(nombre, genero, tamanio){
+            this.super = Animal;
+            this.super(nombre, genero);
+            this.tamanio = tamanio;
+
+            Perro.prototype = new Animal;
+            Perro.prototype.constructor = Perro;
+
+           
+
+        }
+
+        const gato = new Animal('Luna', 'Hembra');
+
+        const PERRITO = new Perro('Negrito', 'Varón', 'Mediano');
+
+
+        console.log(PERRITO);
+        console.log(gato);
+
+        gato.sonar();
+        PERRITO.ladrido();*/
+
+/*
+        class Animal {
+
+
+            constructor(nombre, genero){
+                this.nombre = nombre;
+                this.genero  = genero;
+            }
+
+            sonar(){
+                console.log('Hago ruido porque soy ' + this.nombre);
+            }
+
+            ladrido(){
+                console.log('Ladro porque soy un perro');
+            }
+
+        }
+
+        class perro extends Animal{
+            constructor(nombre, genero, tamanio){
+                super(nombre, genero);
+                this.tamanio = tamanio;
+                this.raza = null;
+            }
+
+
+            get getRaza(){
+                return console.log(this.raza);
+            }
+
+            set setRaza(raza){
+                this.raza = raza;
+            }
+
+            static queEres(){
+                console.log('Soy un Canis Lupus Familiaris');
+            }
+
+            sonar(){
+                console.log('soy un perro');
+            }
+
+            ladrar(){
+
+                console.log('guau guau');
+            }
+        }
+
+        
+        perro.queEres();
+        const mimi = new Animal('mimi', 'nose');
+        const scooby = new perro('scooby', 'Macho', 'gigante');
+        console.log(mimi);
+        mimi.sonar();
+        console.log(scooby);
+        scooby.sonar();
+        scooby.ladrido();
+        scooby.setRaza = 'Dánes';
+        scooby.getRaza;
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         /*function Animal (nombre, genero){
+            //atributos
+            this.nombre = nombre;
+            this.genero = genero;
+            //metodo
+            Animal.prototype.sonar = function(){
+                console.log('*Ruido*');
+            }
+
+            perro.prototype.sonar = function(){
+                console.log('*Ruido*');
+            }
+
+     }
+            //Heredacion
+
+            function perro(nombre, genero, tamanio){
+                //Esta heredando del prototipo del animal 
+            this.super = Animal;
+            this.super(nombre,genero);
+            this.tamanio  = tamanio;
+            //optimizacion de codigo
+            perro.prototype = new Animal;
+            perro.prototype.constructor = perro;
+        
+        }
+
+        const PERRO = new perro('Negrito', 'Varón', 'grande');
+        const GATO = new Animal('Lana', 'Hembra');
+
+        console.log(PERRO);
+        console.log(GATO);
+
+        PERRO.sonar();
+        GATO.sonar();*/
+
+/*        console.group('Titulos de videos');
+
+        console.log('hola mundo 1');
+        console.log('hola mundo 2');
+        console.log('hola mundo 3');
+        console.log('hola mundo 4');
+        console.log('hola mundo 5');
+
+
+        console.groupEnd();
+
+
+        console.groupCollapsed('hola');
+        console.log('hola mundo 1');
+        console.log('hola mundo 2');
+        console.log('hola mundo 3');
+        console.log('hola mundo 4');
+        console.log('hola mundo 5');
+
+        console.groupEnd();
+
+       const numeros = [1,2,3,4,5];
+       const vocales = ['a','e','i','o','u']
+
+       console.table(numeros, vocales);
+
+       console.clear();
+
+       let fecha = new Date();
+
+       console.log(fecha.getFullYear());
+       console.log(fecha.toLocaleString());*/
+       /*
+        let text = 'lorem ipsum dolor sit ameu';
+
+       let regex  = new RegExp('lorem', 'ig');
+       let regex2 = /lorem/;
+
+        let confirmacion = regex.test(text);
+        let confirmacion2 = regex.exec(text);
+        
+       console.log(confirmacion);
+       console.log(confirmacion2);
+*/
+
+
+(function(d, w, c){
+
+alert('hola');
+
+})(document, window, console);
+
+       
+    </script>
+
+</body>
+</html>
