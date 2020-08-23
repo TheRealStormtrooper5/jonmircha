@@ -59,6 +59,45 @@ Set(8) {"casa", 3, 4, 5, 6, …}
 7: 9
 size: (...)
 __proto__: Set*/
+
+//Los Set contienen un metodo llamado .add() que sirve para añadir datos en el ya nombrado Set
+
+set.add('CASA');
+set.add('CASA');
+
+//Los Set tambien poseen un metodo llamado .size que sirven como un .length
+
+console.log(set.size);
+
+//Recorrer el set de 2 maneras, con un forof y con un forEach
+
+for (let item of set) {
+    
+}
+
+set.forEach(item => {
+    console.log(item);
+});
+
+//Se puede convertir un Set  en un arreglo usando la siguiente syntax (Puedes crear la tuya propia tambien)
+
+let Arr = Array.from(set);
+
+console.log(Arr);
+
+//Aunque no habira mucha diferencia ya que ya era un arreglo, no puedes transformar agua en agua ¿sabes?
+
+//Tambien se puede eliminar valores del Set con el metodo .delete() ´Nota solo funciona cuando es metodo set, cuando es un array se usa .Pop´
+
+set.delete("CASA", [0]);
+console.log(set);
+
+// Otra cosa seria que tambien los sets tienen una propiedad llamada has('Nombre de la cosa a buscar') que sirve para saber si algo se encuentra dentro de el.
+
+console.log(set.has('casa'));
+
+/*Deberia devolver un TRUE en la consola*/
+
     </script>
 </body>
 </html>
