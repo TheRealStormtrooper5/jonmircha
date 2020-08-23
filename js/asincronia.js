@@ -39,7 +39,7 @@ function cuadradoPromise (value){
                 value,
                 result: value * value
             });             
-        }, 0 | Math.random() * 100);
+        }, 0 | Math.random() * 1110);
     });
 
 }
@@ -58,8 +58,51 @@ async function funcionAsincronaDeclaraada (){
         obj = await cuadradoPromise(1);
         console.log(`Async Function: ${obj.value}, ${obj.result}`);
 
+
+        obj = await cuadradoPromise(2);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(3);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(4);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(5);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(6);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(7);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(8);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(9);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(10);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(11);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(12);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(13);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(14);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+        obj = await cuadradoPromise(15);
+        console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
     } catch (err) {
-        
+        console.lor(err);
     }
 }
 funcionAsincronaDeclaraada();

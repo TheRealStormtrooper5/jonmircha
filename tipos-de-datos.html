@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de datos</title>
+</head>
+<body>
+    <h1>Nuevos tipos de datos javascript</h1>
+    <script type="text/javascript">
+    
+    const SIMBOLO = Symbol('Ejemplo');
+    const SALUDAR = Symbol('Saludar');
+    
+    const PERSONA = {
+        [SIMBOLO]: "john"
+    }
+
+    console.log(PERSONA);
+
+    PERSONA.SIMBOLO = "JOHN DOE";
+
+    console.log(PERSONA);
+    console.log(PERSONA[SIMBOLO]);
+//Cuando se llama a una funcion se usa corchetes '[ejemplo]' Y LUEGO se usa los parentesis AFUERA '()' 
+    PERSONA[SALUDAR] = function (){
+        console.log(`Hola`);
+    }
+
+PERSONA[SALUDAR]();
+
+for(let propiedad in PERSONA){
+    console.log();
+}
+
+const GETINMA = Object.getOwnPropertySymbols(PERSONA);
+console.log(GETINMA);
+    </script>
+</body>
+</html>
